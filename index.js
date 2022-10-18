@@ -45,7 +45,6 @@ app.use(express.urlencoded({extended:false}))
 // custom (untangible route)
 
 app.use('/session', userRoute)
-app.use('/messages', messageController)
 
 app.listen(app.get('port'), () => {
     console.log(`running on , ${app.get('port')}`)
